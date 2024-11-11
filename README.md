@@ -14,7 +14,7 @@ Este projeto foi desenvolvido como parte da matéria de Banco de Dados II durant
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Resultados e Conclusão](#-resultados-e-conclusão)
 - [Nota Final](#-nota-final)
-- [Autora](#autora)
+- [Autora](#-autora)
 
 ## 🎯 Objetivo do Projeto
 
