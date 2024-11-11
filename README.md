@@ -103,6 +103,6 @@ Este projeto proporcionou a oportunidade de aplicar conceitos de banco de dados 
 
 Obtive a nota máxima neste projeto, o que reafirma minha dedicação e interesse na área de banco de dados dentro da Engenharia de Software.
 
-## <a name="autor"></a> 👨‍💻 Autor
+## <a name="autora"></a> 👩‍💻 Autora
 
 Este projeto foi desenvolvido por **Bárbara Rocha**, estudante do curso de Engenharia de Software da Unicesumar. O projeto foi realizado como parte da matéria de Banco de Dados II, com o intuito de aplicar e aprofundar os conhecimentos adquiridos sobre modelagem e manipulação de dados utilizando o MySQL.
