@@ -14,6 +14,7 @@ Este projeto foi desenvolvido como parte da matéria de Banco de Dados II durant
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Resultados e Conclusão](#-resultados-e-conclusão)
 - [Nota Final](#-nota-final)
+- [Autora](#autora)
 
 ## 🎯 Objetivo do Projeto
 
@@ -102,3 +103,7 @@ Este projeto proporcionou a oportunidade de aplicar conceitos de banco de dados 
 ## 🎓 Nota Final
 
 Obtive a nota máxima neste projeto, o que reafirma minha dedicação e interesse na área de banco de dados dentro da Engenharia de Software.
+
+## 👩‍💻 Autora
+
+Este projeto foi desenvolvido por **Bárbara Rocha**, estudante do curso de Engenharia de Software da Unicesumar. O projeto foi realizado como parte da matéria de Banco de Dados II, com o intuito de aplicar e aprofundar os conhecimentos adquiridos sobre modelagem e manipulação de dados utilizando o MySQL.
