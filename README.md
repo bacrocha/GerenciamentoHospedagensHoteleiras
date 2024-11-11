@@ -75,18 +75,108 @@ Foram criados procedimentos e funções para automatizar operações e consultas
 
 Para atender ao escopo do projeto de Banco de Dados II da minha faculdade, foram solicitadas as seguintes telas de saída, que têm como objetivo proporcionar uma interface clara e funcional para a interação com o sistema de gerenciamento de hospedagens hoteleiras. Cada tela foi projetada para atender a uma necessidade específica do sistema, garantindo que os usuários possam realizar operações como cadastro de clientes, gerenciamento de quartos, reserva de hospedagens e geração de relatórios. As telas solicitadas são as seguintes:
 
-- **A**: Tela para cadastro de clientes, onde são inseridos dados como nome, e-mail, telefone e CPF.
-- **B**: Mensagem de sucesso ou erro no cadastro de cliente, indicando se a operação foi realizada corretamente ou se houve algum problema.
-- **C**: Relatório de quartos cadastrados, exibindo informações sobre os quartos disponíveis no sistema, como número, tipo e preço.
-- **D**: Mensagem de erro ou confirmação ao tentar remover ou alterar dados de um quarto, fornecendo feedback sobre o sucesso ou falha da operação.
-- **E**: Tela para exibir o status de reservas e informações de check-in, mostrando as reservas feitas e seus detalhes.
-- **F**: Tela para confirmação de check-out, incluindo cálculo de valores a pagar, com a finalização da hospedagem.
-- **G**: Relatório de reservas por cliente, que apresenta um histórico das hospedagens realizadas por cada cliente.
-- **H**: Relatório de receita por hotel, exibindo o total gerado de receitas pelas hospedagens realizadas.
-- **I**: Tela mostrando o resultado da execução de funções, como a verificação da disponibilidade de um quarto para uma data específica.
-- **J**: Mensagem de erro ao executar funções, quando os dados fornecidos não são válidos ou não atendem aos critérios necessários.
-- **K**: Resultado da execução de uma trigger, como a inserção de uma nova hospedagem, mostrando o impacto da operação no banco de dados.
-- **L**: Notificação de exclusão de cliente via trigger, informando que o cliente foi removido e os dados relacionados foram processados.
+1. Criação do Banco de Dados
+- **Criação do banco de dados `hospedar_db`.**
+<p align="center">
+  <img src="assets/1.PNG">
+</p>
+
+2. Criação de Tabelas
+- **Criação das tabelas: `Hotel`, `Quarto`, `Cliente`, `Hospedagem`.**
+<p align="center">
+  <img src="assets/2.PNG">
+</p>
+
+3. Inserção de Dados
+- **Inserção de dados fictícios:**
+  - **Hotel**: 2 hotéis
+  - **Quarto**: 5 quartos para cada hotel
+  - **Cliente**: 3 clientes
+  - **Hospedagem**: 20 hospedagens (5 para cada status: "finalizada", "hospedado", "reserva", "cancelada")
+
+4. Consultas SQL
+- **a**: Listar hotéis e quartos (`nome`, `cidade`, `tipo`, `preco_diaria`).
+<p align="center">
+  <img src="assets/4a.PNG">
+</p>
+
+- **b**: Listar clientes com hospedagens "finalizadas" e respectivos quartos e hotéis.
+<p align="center">
+  <img src="assets/4b.PNG">
+</p>
+
+- **c**: Histórico de hospedagens de um cliente.
+<p align="center">
+  <img src="assets/4c.PNG">
+</p>
+
+- **d**: Cliente com maior número de hospedagens.
+<p align="center">
+  <img src="assets/4d.PNG">
+</p>
+
+- **e**: Clientes com hospedagem "cancelada", respectivos quartos e hotéis.
+<p align="center">
+  <img src="assets/4e.PNG">
+</p>
+
+- **f**: Receita dos hotéis (status "finalizada").
+<p align="center">
+  <img src="assets/4f.PNG">
+</p>
+
+- **g**: Clientes com reserva em hotel específico.
+<p align="center">
+  <img src="assets/4g.PNG">
+</p>
+
+- **h**: Valor gasto por cliente em hospedagens "finalizadas".
+<p align="center">
+  <img src="assets/4h.PNG">
+</p>
+
+- **i**: Quartos sem hóspedes.
+<p align="center">
+  <img src="assets/4i.PNG">
+</p>
+
+- **j**: Média de preços de diárias por tipo de quarto.
+<p align="center">
+  <img src="assets/4j.PNG">
+</p>
+
+- **l**: Criar coluna `checkin_realizado` em `Hospedagem` (booleano).
+<p align="center">
+  <img src="assets/4l.PNG">
+</p>
+
+- **m**: Renomear coluna `classificacao` para `ratting` em `Hotel`.
+<p align="center">
+  <img src="assets/4m.PNG">
+</p>
+
+5. Procedimentos PL/MySQL
+- **a**: Procedure `RegistrarCheckIn` para atualizar check-in e status.
+- **b**: Procedure `CalcularTotalHospedagem` para calcular o valor total.
+- **c**: Procedure `RegistrarCheckout` para atualizar check-out e status.
+<p align="center">
+  <img src="assets/5.PNG">
+</p>
+
+6. Funções PL/MySQL
+- **a**: Função `TotalHospedagensHotel` para retornar o total de hospedagens de um hotel.
+- **b**: Função `ValorMedioDiariasHotel` para calcular a média das diárias.
+- **c**: Função `VerificarDisponibilidadeQuarto` para verificar disponibilidade de quarto.
+<p align="center">
+  <img src="assets/6.PNG">
+</p>
+
+7. Triggers PL/MySQL
+- **a**: Trigger `AntesDeInserirHospedagem` para verificar a disponibilidade do quarto antes de inserir.
+- **b**: Trigger `AposDeletarCliente` para registrar exclusão de cliente em log.
+<p align="center">
+  <img src="assets/7.PNG">
+</p>
 
 Essas telas são fundamentais para garantir que o sistema atenda às necessidades dos usuários e forneça uma experiência interativa, facilitando a gestão de informações e operações no sistema de gerenciamento de hospedagens hoteleiras.
 
