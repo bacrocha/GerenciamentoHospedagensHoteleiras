@@ -10,6 +10,7 @@ Este projeto foi desenvolvido como parte da matéria de Banco de Dados II durant
 - [Consultas SQL](#consultas-sql)
 - [Procedimentos e Funções com PLMySQL](#procedimentos-e-funções-com-plmysql)
 - [Triggers](#triggers)
+- [Telas de Saídas](#telas-de-saídas)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Resultados e Conclusão](#resultados-e-conclusão)
 - [Nota Final](#nota-final)
@@ -69,6 +70,25 @@ Foram criados procedimentos e funções para automatizar operações e consultas
 
 - **AntesDeInserirHospedagem**: Trigger que verifica a disponibilidade do quarto antes de inserir uma nova hospedagem.
 - **AposDeletarCliente**: Trigger que registra a exclusão de um cliente em uma tabela de log.
+
+## <a name="telas-de-saídas"></a>  🖥️ Telas de Saídas
+
+Para atender ao escopo do projeto de Banco de Dados II da minha faculdade, foram solicitadas as seguintes telas de saída, que têm como objetivo proporcionar uma interface clara e funcional para a interação com o sistema de gerenciamento de hospedagens hoteleiras. Cada tela foi projetada para atender a uma necessidade específica do sistema, garantindo que os usuários possam realizar operações como cadastro de clientes, gerenciamento de quartos, reserva de hospedagens e geração de relatórios. As telas solicitadas são as seguintes:
+
+- **A**: Tela para cadastro de clientes, onde são inseridos dados como nome, e-mail, telefone e CPF.
+- **B**: Mensagem de sucesso ou erro no cadastro de cliente, indicando se a operação foi realizada corretamente ou se houve algum problema.
+- **C**: Relatório de quartos cadastrados, exibindo informações sobre os quartos disponíveis no sistema, como número, tipo e preço.
+- **D**: Mensagem de erro ou confirmação ao tentar remover ou alterar dados de um quarto, fornecendo feedback sobre o sucesso ou falha da operação.
+- **E**: Tela para exibir o status de reservas e informações de check-in, mostrando as reservas feitas e seus detalhes.
+- **F**: Tela para confirmação de check-out, incluindo cálculo de valores a pagar, com a finalização da hospedagem.
+- **G**: Relatório de reservas por cliente, que apresenta um histórico das hospedagens realizadas por cada cliente.
+- **H**: Relatório de receita por hotel, exibindo o total gerado de receitas pelas hospedagens realizadas.
+- **I**: Tela mostrando o resultado da execução de funções, como a verificação da disponibilidade de um quarto para uma data específica.
+- **J**: Mensagem de erro ao executar funções, quando os dados fornecidos não são válidos ou não atendem aos critérios necessários.
+- **K**: Resultado da execução de uma trigger, como a inserção de uma nova hospedagem, mostrando o impacto da operação no banco de dados.
+- **L**: Notificação de exclusão de cliente via trigger, informando que o cliente foi removido e os dados relacionados foram processados.
+
+Essas telas são fundamentais para garantir que o sistema atenda às necessidades dos usuários e forneça uma experiência interativa, facilitando a gestão de informações e operações no sistema de gerenciamento de hospedagens hoteleiras.
 
 ## <a name="tecnologias-utilizadas"></a> 🛠️ Tecnologias Utilizadas
 
