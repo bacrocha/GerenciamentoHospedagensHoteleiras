@@ -19,7 +19,6 @@ Este projeto foi desenvolvido como parte da matéria de Banco de Dados II durant
 ## 🎯 Objetivo do Projeto
 
 O sistema visa centralizar e simplificar o gerenciamento de reservas, dados de clientes, quartos e histórico de hospedagem, aplicando conceitos fundamentais de banco de dados, como:
-- **Modelagem de dados**: criação de um Diagrama Entidade-Relacionamento (DER) para identificar entidades e relacionamentos.
 - **Estruturação de tabelas e relacionamentos**: tabelas para armazenar informações de clientes, reservas e quartos, com implementação de relacionamentos específicos.
 - **Consultas SQL**: desenvolvimento de queries para gerar relatórios e extrair informações relevantes.
 
